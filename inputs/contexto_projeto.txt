@@ -1,0 +1,48 @@
+PROJETO: Previsão de Vendas de Sorvete - Gelato Mágico
+==========================================================
+
+CONTEXTO DO NEGÓCIO:
+A Gelato Mágico é uma sorveteria localizada em uma cidade litorânea que enfrenta desafios 
+no planejamento de produção. A quantidade de sorvetes vendidos diariamente tem forte 
+correlação com a temperatura ambiente, mas sem um planejamento adequado, há desperdício 
+de produtos ou perda de vendas.
+
+OBJETIVO:
+Desenvolver um modelo de Machine Learning capaz de prever as vendas diárias de sorvete 
+com base em variáveis meteorológicas e de calendário, permitindo:
+- Otimizar a produção diária
+- Reduzir desperdícios
+- Maximizar lucros
+- Antecipar a demanda em dias especiais
+
+DADOS UTILIZADOS:
+- Temperatura ambiente (principal driver)
+- Umidade relativa do ar
+- Precipitação (chuva)
+- Nebulosidade
+- Dias da semana e feriados
+- Promoções
+- Dados históricos de vendas
+
+METODOLOGIA:
+1. Coleta de dados meteorológicos reais do INMET (Instituto Nacional de Meteorologia)
+2. Criação de dataset híbrido combinando dados reais e simulados
+3. Tratamento e limpeza dos dados
+4. Engenharia de features (fim de semana, feriados, dia quente, chuva forte)
+5. Treinamento de modelo de Regressão Linear
+6. Avaliação com métricas MAE e R²
+7. Visualização dos resultados
+
+INSIGHTS ESPERADOS:
+- Identificar os principais fatores que influenciam as vendas
+- Quantificar o impacto da temperatura nas vendas
+- Avaliar o efeito de promoções e feriados
+- Entender padrões de vendas em fins de semana
+- Criar sistema preditivo para auxiliar na tomada de decisão
+
+PRÓXIMAS ETAPAS:
+- Registro do modelo com MLflow para versionamento e rastreabilidade
+- Deploy em ambiente cloud (Azure ML, AWS SageMaker ou Google Cloud AI)
+- Criação de pipeline automatizado para retreinamento periódico
+- Implementação de API para previsões em tempo real
+- Monitoramento contínuo da performance do modelo
